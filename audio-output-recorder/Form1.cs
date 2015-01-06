@@ -25,6 +25,25 @@ namespace audio_output_recorder
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (System.IO.File.Exists(Environment.CurrentDirectory + "\\ffmpeg.exe") == false)
+            {
+                if (MessageBox.Show("No ffmpeg.exe could not be found although it's needed for encoding and downsampling." + 
+                    "\n\nWould you like to open up a webbrowser window with a website where you can download ffmpeg? " +
+                    "Choose 32-bit static if you're unsure and put ffmpeg.exe in the same folder as audio-output-recorder.", 
+                    "Error", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
+                {
+                    System.Diagnostics.Process.Start("http://ffmpeg.zeranoe.com/builds/");
+                    Environment.Exit(0);
+                }
+                else
+                {
+                    chkDownsample.Checked = false;
+                    chkDownsample.Enabled = false;
+                    chkEncode.Checked = false;
+                    chkEncode.Enabled = false;
+                }
+            }
+            
             NAudio.CoreAudioApi.MMDeviceEnumerator devEnum = new NAudio.CoreAudioApi.MMDeviceEnumerator();
             NAudio.CoreAudioApi.MMDeviceCollection devColl = devEnum.EnumerateAudioEndPoints(
                 NAudio.CoreAudioApi.DataFlow.Render, NAudio.CoreAudioApi.DeviceState.Active);
