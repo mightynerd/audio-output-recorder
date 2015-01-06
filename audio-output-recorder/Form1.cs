@@ -43,6 +43,15 @@ namespace audio_output_recorder
                     chkEncode.Enabled = false;
                 }
             }
+
+            if (System.IO.Directory.Exists(Properties.Settings.Default.recordingPath))
+            {
+                txtOutput.Text = Properties.Settings.Default.recordingPath;
+            }
+            else
+            {
+                txtOutput.Text = Environment.GetFolderPath(Environment.SpecialFolder.DesktopDirectory);
+            }
             
             NAudio.CoreAudioApi.MMDeviceEnumerator devEnum = new NAudio.CoreAudioApi.MMDeviceEnumerator();
             NAudio.CoreAudioApi.MMDeviceCollection devColl = devEnum.EnumerateAudioEndPoints(
@@ -135,6 +144,7 @@ namespace audio_output_recorder
             currentOutput = GetOutputName();
 
             recorder.Record(currentOutput + "_TEMP.wav");
+            this.Text = "[REC] audio-output-capture";
         }
 
         private void FixOutputTextbox()
@@ -193,11 +203,21 @@ namespace audio_output_recorder
             //Done encoding
             System.IO.File.Delete(output.Remove(output.LastIndexOf('.')) + "_TEMP.wav");
             btnRecord.Enabled = true;
+            this.Text = "audio-output-capture";
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             new HelpForm().Show();
+        }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (System.IO.Directory.Exists(txtOutput.Text))
+            {
+                Properties.Settings.Default.recordingPath = txtOutput.Text;
+                Properties.Settings.Default.Save();
+            }
         }
     }
 }
