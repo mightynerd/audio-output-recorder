@@ -1,0 +1,20 @@
+Help/About file
+audio-output-recorder public release 1
+
+- Features
++ Record "what you hear" from any output audio device to an audio file
++ Support for WAV, MP3 and OGG formats with selectable bitrates
++ DPI-aware user interface that looks good on high-DPI displays
+
+- About
+Captures audio data from an audio output device (your sound card) and saves it as an audio file. 
+Written by MightyNerd using C# under .NET Framework 4.5.
+
+- Usage
+Select an audio device to record from. Make sure you choose the right one, recording from a quiet audio device will result in an empty audio file (and errors).
+
+Choose encoding settings. All recordings are first saved as a WAV file with different specifications depending on your audio device settings. If you want to get a "normal" 44,1kHz/16bit WAV file, make sure to check the downsample checkbox.
+
+Choose an output folder.
+
+Click record to start recording and stop to stop recording.
