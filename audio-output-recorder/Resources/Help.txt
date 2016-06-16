@@ -1,5 +1,5 @@
 Help/About file
-audio-output-recorder public release 1
+audio-output-recorder public release 2
 
 - Features
 + Record "what you hear" from any output audio device to an audio file

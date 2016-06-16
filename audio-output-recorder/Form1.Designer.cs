@@ -55,7 +55,7 @@
             this.cDevice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cDevice.FormattingEnabled = true;
             this.cDevice.Location = new System.Drawing.Point(60, 7);
-            this.cDevice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cDevice.Margin = new System.Windows.Forms.Padding(2);
             this.cDevice.Name = "cDevice";
             this.cDevice.Size = new System.Drawing.Size(265, 21);
             this.cDevice.TabIndex = 0;
@@ -63,7 +63,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 9);
+            this.label1.Location = new System.Drawing.Point(11, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
@@ -79,9 +79,9 @@
             this.groupEncode.Controls.Add(this.rOgg);
             this.groupEncode.Controls.Add(this.rMp3);
             this.groupEncode.Location = new System.Drawing.Point(14, 60);
-            this.groupEncode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupEncode.Margin = new System.Windows.Forms.Padding(2);
             this.groupEncode.Name = "groupEncode";
-            this.groupEncode.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupEncode.Padding = new System.Windows.Forms.Padding(2);
             this.groupEncode.Size = new System.Drawing.Size(310, 103);
             this.groupEncode.TabIndex = 2;
             this.groupEncode.TabStop = false;
@@ -90,7 +90,7 @@
             // 
             this.panelHelp.Controls.Add(this.linkLabel1);
             this.panelHelp.Location = new System.Drawing.Point(230, 74);
-            this.panelHelp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelHelp.Margin = new System.Windows.Forms.Padding(2);
             this.panelHelp.Name = "panelHelp";
             this.panelHelp.Size = new System.Drawing.Size(75, 25);
             this.panelHelp.TabIndex = 8;
@@ -141,7 +141,7 @@
             "256k",
             "320k"});
             this.cBitrate.Location = new System.Drawing.Point(86, 65);
-            this.cBitrate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cBitrate.Margin = new System.Windows.Forms.Padding(2);
             this.cBitrate.Name = "cBitrate";
             this.cBitrate.Size = new System.Drawing.Size(100, 21);
             this.cBitrate.TabIndex = 5;
@@ -151,7 +151,7 @@
             this.rOgg.AutoSize = true;
             this.rOgg.Enabled = false;
             this.rOgg.Location = new System.Drawing.Point(12, 41);
-            this.rOgg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rOgg.Margin = new System.Windows.Forms.Padding(2);
             this.rOgg.Name = "rOgg";
             this.rOgg.Size = new System.Drawing.Size(86, 17);
             this.rOgg.TabIndex = 1;
@@ -164,7 +164,7 @@
             this.rMp3.Checked = true;
             this.rMp3.Enabled = false;
             this.rMp3.Location = new System.Drawing.Point(12, 23);
-            this.rMp3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.rMp3.Margin = new System.Windows.Forms.Padding(2);
             this.rMp3.Name = "rMp3";
             this.rMp3.Size = new System.Drawing.Size(78, 17);
             this.rMp3.TabIndex = 0;
@@ -175,7 +175,7 @@
             // txtOutput
             // 
             this.txtOutput.Location = new System.Drawing.Point(86, 211);
-            this.txtOutput.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOutput.Margin = new System.Windows.Forms.Padding(2);
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.Size = new System.Drawing.Size(177, 20);
             this.txtOutput.TabIndex = 0;
@@ -193,7 +193,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(268, 206);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 28);
             this.button1.TabIndex = 0;
@@ -205,7 +205,7 @@
             // 
             this.chkEncode.AutoSize = true;
             this.chkEncode.Location = new System.Drawing.Point(14, 42);
-            this.chkEncode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkEncode.Margin = new System.Windows.Forms.Padding(2);
             this.chkEncode.Name = "chkEncode";
             this.chkEncode.Size = new System.Drawing.Size(106, 17);
             this.chkEncode.TabIndex = 4;
@@ -216,7 +216,7 @@
             // btnRecord
             // 
             this.btnRecord.Location = new System.Drawing.Point(14, 172);
-            this.btnRecord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRecord.Margin = new System.Windows.Forms.Padding(2);
             this.btnRecord.Name = "btnRecord";
             this.btnRecord.Size = new System.Drawing.Size(251, 28);
             this.btnRecord.TabIndex = 5;
@@ -228,7 +228,7 @@
             // 
             this.btnStop.Enabled = false;
             this.btnStop.Location = new System.Drawing.Point(268, 172);
-            this.btnStop.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStop.Margin = new System.Windows.Forms.Padding(2);
             this.btnStop.Name = "btnStop";
             this.btnStop.Size = new System.Drawing.Size(56, 28);
             this.btnStop.TabIndex = 6;
@@ -241,12 +241,12 @@
             this.chkDownsample.AutoSize = true;
             this.chkDownsample.Checked = true;
             this.chkDownsample.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.chkDownsample.Location = new System.Drawing.Point(165, 42);
-            this.chkDownsample.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chkDownsample.Location = new System.Drawing.Point(185, 42);
+            this.chkDownsample.Margin = new System.Windows.Forms.Padding(2);
             this.chkDownsample.Name = "chkDownsample";
-            this.chkDownsample.Size = new System.Drawing.Size(159, 17);
+            this.chkDownsample.Size = new System.Drawing.Size(140, 17);
             this.chkDownsample.TabIndex = 7;
-            this.chkDownsample.Text = "Downsample to 44.1kHz/16";
+            this.chkDownsample.Text = "Downsample to 44,1/16";
             this.chkDownsample.UseVisualStyleBackColor = true;
             // 
             // Form1
@@ -266,7 +266,7 @@
             this.Controls.Add(this.cDevice);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "audio-output-recorder";

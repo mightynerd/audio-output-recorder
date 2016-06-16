@@ -25,10 +25,19 @@ namespace audio_output_recorder
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //Check windows
+            if (Environment.OSVersion.Version.Major < 6)
+            {
+                MessageBox.Show("You are using an unsupported version of Windows.\n\n" +
+                                "audio-output-recorder requires Windows Vista or newer (which supports WASAPI).",
+                                "Unsupported version of Windows", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+            //Check for ffmpeg.exe
             if (System.IO.File.Exists(Environment.CurrentDirectory + "\\ffmpeg.exe") == false)
             {
-                if (MessageBox.Show("No ffmpeg.exe could not be found although it's needed for encoding and downsampling." + 
-                    "\n\nWould you like to open up a webbrowser window with a website where you can download ffmpeg? " +
+                if (MessageBox.Show("No ffmpeg.exe could not be found in the current directory."+ 
+                    "\n\nWould you like to open up a web browser window with a website where you can download ffmpeg? " +
                     "Choose 32-bit static if you're unsure and put ffmpeg.exe in the same folder as audio-output-recorder.", 
                     "Error", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
                 {

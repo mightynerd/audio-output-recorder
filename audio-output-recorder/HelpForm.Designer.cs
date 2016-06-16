@@ -34,9 +34,10 @@
             // 
             // txtHelp
             // 
+            this.txtHelp.AcceptsReturn = true;
             this.txtHelp.Dock = System.Windows.Forms.DockStyle.Fill;
             this.txtHelp.Location = new System.Drawing.Point(0, 0);
-            this.txtHelp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtHelp.Margin = new System.Windows.Forms.Padding(2);
             this.txtHelp.Multiline = true;
             this.txtHelp.Name = "txtHelp";
             this.txtHelp.ReadOnly = true;
@@ -50,7 +51,7 @@
             this.ClientSize = new System.Drawing.Size(471, 332);
             this.Controls.Add(this.txtHelp);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "HelpForm";
