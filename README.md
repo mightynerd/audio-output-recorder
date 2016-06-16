@@ -10,4 +10,4 @@ A program written in C# with .NET 4.5 that records "what you hear" from any audi
 Clone the repository, build it using Visual Studio 2015 (Community edition is used for development) and put a Windows binary of ffmpeg compiled with support for libmp3lame and libogg that you can acquire here: http://ffmpeg.zeranoe.com/builds/ in the same directory as the main excecutable. 
 
 ##Binary Download
-https://github.com/mightynerd/audio-output-recorder/releases
+[Releases](https://github.com/mightynerd/audio-output-recorder/releases)
